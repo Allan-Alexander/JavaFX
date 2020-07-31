@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="JFXML_1_Login.jnlp">
+  <information>
+    <title>JFXML_1_Login</title>
+    <vendor>saji</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="JFXML_1_Login.jar" size="2426891" download="eager" />
+    <jar href="lib\jfoenix-8.0.7.jar" size="2631271" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="jfxml_1_login.JFXML_1_Login"  name="JFXML_1_Login" />
+  <update check="always"/>
+</jnlp>

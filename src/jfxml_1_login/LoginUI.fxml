@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="489.0" maxWidth="1080.0" prefHeight="483" prefWidth="1015.0" styleClass="parent" stylesheets="@StyleSheet.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="jfxml_1_login.LoginController">
+   <children>
+      <ImageView blendMode="DIFFERENCE" fitHeight="484.0" fitWidth="381.0" layoutX="356.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/Tiger.jpg" />
+         </image>
+      </ImageView>
+      <Circle fill="#ff0d00" layoutX="30.0" layoutY="30.0" onMouseClicked="#Close" radius="6.0" stroke="BLACK" strokeType="INSIDE" styleClass="redcircle" />
+      <Circle fill="#eaff00" layoutX="49.0" layoutY="30.0" onMouseClicked="#Back_to_Menu" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#2cff00" layoutX="69.0" layoutY="30.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="22.0" layoutY="74.0" text="MECHATRONICS" textFill="#b8b5b4">
+         <font>
+            <Font name="Times New Roman" size="43.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="133.0" prefHeight="96.0" prefWidth="1015.0" text="Mechatronics is a multidisciplinary field that combines several types of engineerin &#10;electrical, computer, and mechanical—and refers to the skill sets needed &#10;in the contemporary, advanced automated manufacturing industry." textFill="#bab7b7" wrapText="true">
+         <font>
+            <Font name="SansSerif Regular" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="245.0" prefHeight="182.0" prefWidth="874.0" text="Mechatronics specialists can do quite a bit across multiple engineering disciplines and have a solid base from which &#10;to grow. Mechatronics specialists know both mechanical and electrical engineering fundamentals—they &#10;speak both languages—so a mechatronics specialist can work with both mechanical and engineering teams.&#10;&#10;Mechatronics specialists work with massive industrial robots, smaller robots in pick-and-place operations, &#10;control systems for bottling or packaging of food and drink products, drones, designing control systems for rides &#10;in amusement parks, prototype development." textFill="#bab7b7">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

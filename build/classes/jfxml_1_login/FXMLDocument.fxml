@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="content_area" prefHeight="483.0" prefWidth="1015.0" style="-fx-background-color: #000000;" styleClass="parent" stylesheets="@StyleSheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jfxml_1_login.FXMLDocumentController">
+   <children>
+      <ImageView blendMode="DIFFERENCE" fitHeight="484.0" fitWidth="381.0" layoutX="204.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/Tiger.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="686.0" layoutY="42.0" prefHeight="400.0" prefWidth="283.0" style="-fx-background-color: #9c2b27;">
+         <children>
+             
+            <JFXTextField fx:id="username" focusColor="WHITE" labelFloat="true" layoutX="24.0" layoutY="125.0" prefHeight="25.0" prefWidth="232.0" promptText="username" styleClass="textfield" stylesheets="@StyleSheet.css" unFocusColor="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font></JFXTextField>
+            <JFXPasswordField fx:id="password" focusColor="WHITE" labelFloat="true" layoutX="24.0" layoutY="194.0" prefHeight="25.0" prefWidth="232.0" promptText="password" styleClass="passwordfield" stylesheets="@StyleSheet.css" unFocusColor="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font></JFXPasswordField>
+            <JFXButton layoutX="24.0" layoutY="248.0" onMouseClicked="#Submit" prefHeight="25.0" prefWidth="232.0" style="-fx-background-color: #e45652;" styleClass="submit" stylesheets="@StyleSheet.css" text="Submit" textFill="WHITE" />
+            <Label layoutX="105.0" layoutY="61.0" text="Sign In" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="85.0" layoutY="309.0" styleClass="forget" stylesheets="@StyleSheet.css" text="Forgot Password?" textFill="#7e7474">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="86.0" layoutY="187.0" text="Welcome Home" textFill="WHITE">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
+      <Label layoutX="86.0" layoutY="242.0" text="Designed to excell at automation ." textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="86.0" layoutY="279.0" onMouseClicked="#enroll" prefHeight="25.0" prefWidth="152.0" style="-fx-background-color: #e45652;" styleClass="enroll" stylesheets="@StyleSheet.css" text="Enroll" textFill="WHITE" />
+      <Circle fill="#ff0d00" layoutX="20.0" layoutY="20.0" onMouseClicked="#handleClose" radius="6.0" stroke="BLACK" strokeType="INSIDE" styleClass="redcircle" />
+      <Circle fill="#eaff00" layoutX="39.0" layoutY="20.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#2cff00" layoutX="59.0" layoutY="20.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+   </children>
+</AnchorPane>
